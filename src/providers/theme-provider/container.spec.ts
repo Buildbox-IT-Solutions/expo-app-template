@@ -3,7 +3,7 @@ import { ETheme } from '~/enums/theme'
 import { useAppStore } from '~/stores/app-store'
 import { darkTheme } from '~/themes/dark'
 import { lightTheme } from '~/themes/light'
-import { useContainer } from '../theme-provider/use-container'
+import { useContainer } from './container'
 
 jest.mock('~/stores/app-store', () => ({
 	useAppStore: jest.fn(),

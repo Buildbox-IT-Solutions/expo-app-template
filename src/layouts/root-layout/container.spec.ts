@@ -1,7 +1,7 @@
 import { renderHook } from '@testing-library/react-hooks'
 import { useFonts } from 'expo-font'
 import * as SplashScreen from 'expo-splash-screen'
-import { useContainer } from '~/layouts/root-layout/use-container'
+import { useContainer } from '~/layouts/root-layout/container'
 
 jest.mock('expo-font')
 jest.mock('expo-splash-screen', () => ({

@@ -18,7 +18,8 @@
 		"davidanson.vscode-markdownlint",
 		"leonardssh.vscord",
 		"ryanluker.vscode-coverage-gutters",
-		"github.vscode-github-actions"
+		"github.vscode-github-actions",
+		"ritwickdey.liveserver"
 	],
 	"unwantedRecommendations": [
 		"dbaeumer.vscode-eslint",

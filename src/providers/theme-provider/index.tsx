@@ -1,6 +1,6 @@
 import { type ReactNode, createContext, useContext } from 'react'
 import { ThemeProvider } from 'styled-components/native'
-import { useContainer } from './use-container'
+import { useContainer } from './container'
 
 interface IAppThemeProviderContext {
 	setLightTheme: () => void

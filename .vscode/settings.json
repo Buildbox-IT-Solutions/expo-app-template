@@ -1,9 +1,23 @@
 {
+	"[javascript]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
 	"[markdown]": {
 		"editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
 	},
-	"cSpell.words": ["lefthook", "partialize", "prontu", "Prontu"],
-	"editor.defaultFormatter": "biomejs.biome",
+	"[typescript]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"cSpell.words": [
+		"lefthook",
+		"partialize"
+	],
 	"editor.codeActionsOnSave": {
 		"source.organizeImports.biome": "explicit"
 	},
@@ -21,6 +35,8 @@
 		"package.json": "tsconfig*, pnpm-lock*, .nvmrc, .releaserc, app.json, eas.json"
 	},
 	"i18n-ally.keystyle": "flat",
-	"i18n-ally.localesPaths": ["**/languages/**"],
+	"i18n-ally.localesPaths": [
+		"**/languages/**"
+	],
 	"i18n-ally.sourceLanguage": "pt-br"
 }
