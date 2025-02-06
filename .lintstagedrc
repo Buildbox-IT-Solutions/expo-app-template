@@ -1,3 +1,6 @@
 {
-	"*.{ts,tsx}": ["jest --bail --findRelatedTests"]
+	"*.{js,jsx,ts,tsx,json}": [
+		"pnpm lint",
+		"jest --bail --findRelatedTests --passWithNoTests"
+	]
 }

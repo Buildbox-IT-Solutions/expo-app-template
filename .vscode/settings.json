@@ -2,12 +2,8 @@
 	"[markdown]": {
 		"editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
 	},
-	"cSpell.words": [
-		"lefthook",
-		"partialize",
-		"prontu",
-		"Prontu"
-	],
+	"cSpell.words": ["lefthook", "partialize", "prontu", "Prontu"],
+	"editor.defaultFormatter": "biomejs.biome",
 	"editor.codeActionsOnSave": {
 		"source.organizeImports.biome": "explicit"
 	},
@@ -25,8 +21,6 @@
 		"package.json": "tsconfig*, pnpm-lock*, .nvmrc, .releaserc"
 	},
 	"i18n-ally.keystyle": "flat",
-	"i18n-ally.localesPaths": [
-		"**/languages/**"
-	],
+	"i18n-ally.localesPaths": ["**/languages/**"],
 	"i18n-ally.sourceLanguage": "pt-br"
 }

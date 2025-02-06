@@ -4,8 +4,6 @@ import { useThemeContext } from '~/providers/theme-provider'
 import { useGetUser } from '~/services/auth'
 import * as S from './styles'
 
-import { devLog } from 'bx-core'
-
 export function InitialScreen() {
 	const { data, isLoading } = useGetUser()
 
@@ -26,12 +24,7 @@ export function InitialScreen() {
 
 				{isLoading && <ActivityIndicator />}
 
-				<Button
-					title="Light Theme"
-					onPress={() => {
-						devLog
-					}}
-				/>
+				<Button title="Light Theme" />
 				<Button title="Light Theme" onPress={setLightTheme} />
 				<Button title="Dark Theme" onPress={setDarkTheme} />
 			</S.Container>
