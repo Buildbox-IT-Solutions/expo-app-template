@@ -15,10 +15,10 @@
 	"editor.tabSize": 4,
 	"explorer.fileNesting.enabled": true,
 	"explorer.fileNesting.patterns": {
-		".editorconfig": "biome*, lefthook*, commitlint*",
+		".editorconfig": "biome*, lefthook*, commitlint*,.lintstagedrc",
 		".env": ".env*",
 		".gitignore": ".git*",
-		"package.json": "tsconfig*, pnpm-lock*, .nvmrc, .releaserc"
+		"package.json": "tsconfig*, pnpm-lock*, .nvmrc, .releaserc, app.json, eas.json"
 	},
 	"i18n-ally.keystyle": "flat",
 	"i18n-ally.localesPaths": ["**/languages/**"],
