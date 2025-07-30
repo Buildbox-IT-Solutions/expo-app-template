@@ -1,4 +1,4 @@
-import { type ReactNode, createContext, useContext } from 'react'
+import { createContext, type ReactNode, useContext } from 'react'
 import { ThemeProvider } from 'styled-components/native'
 import { useContainer } from './container'
 

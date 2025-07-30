@@ -7,7 +7,7 @@ import ptBr from './languages/pt-br.json'
 const DEFAULT_LANGUAGE = 'pt-BR'
 
 i18n.use(initReactI18next).init({
-	compatibilityJSON: 'v3',
+	compatibilityJSON: 'v4',
 	resources: {
 		'pt-BR': { translation: ptBr },
 	},
