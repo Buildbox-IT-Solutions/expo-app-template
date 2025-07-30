@@ -1,13 +1,13 @@
-import { type StateCreator, create } from 'zustand'
+import { create, type StateCreator } from 'zustand'
 import {
+	appStoreDisposableSlice,
 	type IDisposableSlice,
 	type IDisposableState,
-	appStoreDisposableSlice,
 } from './disposable'
 import {
+	appStorePersistentSlice,
 	type IPersistentSlice,
 	type IPersistentState,
-	appStorePersistentSlice,
 } from './persist'
 
 interface ISharedSlice {

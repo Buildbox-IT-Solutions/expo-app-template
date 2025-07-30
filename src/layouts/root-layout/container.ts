@@ -1,5 +1,7 @@
 import { useFonts } from 'expo-font'
+
 export { ErrorBoundary } from 'expo-router'
+
 import * as SplashScreen from 'expo-splash-screen'
 import { useEffect } from 'react'
 import { EFont } from '~/enums/fonts'
