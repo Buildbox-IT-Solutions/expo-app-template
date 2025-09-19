@@ -10,7 +10,7 @@ const THEMES = {
 	[ETheme.DARK]: darkTheme,
 }
 
-export function useContainer() {
+export function useThemeProviderContainer() {
 	const { set, theme } = useAppStore(
 		useShallow(({ set, theme }) => ({ set, theme })),
 	)

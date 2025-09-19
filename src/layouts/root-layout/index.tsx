@@ -2,10 +2,10 @@ import { Stack } from 'expo-router'
 import { StatusBar } from 'expo-status-bar'
 import { QueryProvider } from '~/providers/query-provider'
 import { AppThemeProvider } from '~/providers/theme-provider'
-import { useContainer } from './container'
+import { useRootLayoutContainer } from './container'
 
 export default function RootLayout() {
-	const { loaded } = useContainer()
+	const { loaded } = useRootLayoutContainer()
 
 	if (!loaded) return null
 
