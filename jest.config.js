@@ -20,6 +20,7 @@ module.exports = {
 		'!**/interfaces/**',
 		'!**/styles.ts/**',
 		'!**/types.ts/**',
+		'!**/services/**',
 		'!src/app/*',
 		'!src/i18n/**',
 		'!src/themes/*',

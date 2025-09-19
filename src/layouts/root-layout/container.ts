@@ -8,7 +8,7 @@ import { EFont } from '~/enums/fonts'
 
 SplashScreen.preventAutoHideAsync()
 
-export function useContainer() {
+export function useRootLayoutContainer() {
 	const [loaded, error] = useFonts({
 		[EFont.REGULAR]: require('../../assets/fonts/SpaceMono-Regular.ttf'),
 	})

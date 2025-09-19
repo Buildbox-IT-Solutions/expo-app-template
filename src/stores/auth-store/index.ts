@@ -1,10 +1,8 @@
 import { create } from 'zustand'
 import { createJSONStorage, persist } from 'zustand/middleware'
-import type { IUser } from '~/interfaces/auth'
 import { zustandStorage } from '~/utils/storage'
 
 interface IAuthState {
-	user: IUser | null
 	accessToken: string | null
 }
 
@@ -16,7 +14,6 @@ interface IAuthActions {
 type IAuthStore = IAuthState & IAuthActions
 
 const DEFAULT_STATE: IAuthState = {
-	user: null,
 	accessToken: null,
 }
 

@@ -3,13 +3,13 @@ import { ETheme } from '~/enums/theme'
 import { useAppStore } from '~/stores/app-store'
 import { darkTheme } from '~/themes/dark'
 import { lightTheme } from '~/themes/light'
-import { useContainer } from './container'
+import { useThemeProviderContainer } from './container'
 
 jest.mock('~/stores/app-store', () => ({
 	useAppStore: jest.fn(),
 }))
 
-describe('useContainer', () => {
+describe('useThemeProviderContainer', () => {
 	let setMock: jest.Mock
 
 	beforeEach(() => {
@@ -25,12 +25,12 @@ describe('useContainer', () => {
 	})
 
 	it('should return the current theme', () => {
-		const { result } = renderHook(() => useContainer())
+		const { result } = renderHook(() => useThemeProviderContainer())
 		expect(result.current.currentTheme).toBe(lightTheme)
 	})
 
 	it('should set the light theme', () => {
-		const { result } = renderHook(() => useContainer())
+		const { result } = renderHook(() => useThemeProviderContainer())
 		act(() => {
 			result.current.setLightTheme()
 		})
@@ -42,7 +42,7 @@ describe('useContainer', () => {
 			set: setMock,
 			theme: ETheme.DARK,
 		})
-		const { result } = renderHook(() => useContainer())
+		const { result } = renderHook(() => useThemeProviderContainer())
 		act(() => {
 			result.current.setDarkTheme()
 		})
@@ -54,7 +54,7 @@ describe('useContainer', () => {
 			set: setMock,
 			theme: ETheme.DARK,
 		})
-		const { result } = renderHook(() => useContainer())
+		const { result } = renderHook(() => useThemeProviderContainer())
 		expect(result.current.currentTheme).toBe(darkTheme)
 	})
 })
