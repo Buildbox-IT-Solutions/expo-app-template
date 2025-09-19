@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/Buildbox-IT-Solutions/expo-app-template/compare/v1.0.0...v1.1.0) (2025-09-19)
+
+
+### Features
+
+* add new initial screen ([7d2a0cc](https://github.com/Buildbox-IT-Solutions/expo-app-template/commit/7d2a0cc5dc7f25f17b627de426b4870d6af01216))
+
 # 1.0.0 (2025-08-01)
 
 
