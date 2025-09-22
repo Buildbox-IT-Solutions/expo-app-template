@@ -14,10 +14,7 @@
 	"[typescriptreact]": {
 		"editor.defaultFormatter": "biomejs.biome"
 	},
-	"cSpell.words": [
-		"lefthook",
-		"partialize"
-	],
+	"cSpell.words": ["lefthook", "partialize"],
 	"editor.codeActionsOnSave": {
 		"source.organizeImports.biome": "explicit"
 	},
@@ -29,14 +26,12 @@
 	"editor.tabSize": 4,
 	"explorer.fileNesting.enabled": true,
 	"explorer.fileNesting.patterns": {
-		".editorconfig": "biome*, lefthook*, commitlint*,.lintstagedrc",
+		".editorconfig": "biome*, lefthook*, commitlint*, .lintstagedrc",
 		".env": ".env*",
 		".gitignore": ".git*",
-		"package.json": "tsconfig*, pnpm-lock*, .nvmrc, .releaserc, app.json, eas.json"
+		"package.json": "tsconfig*, pnpm*, .nvmrc, .releaserc, app.json, eas.json, .npmrc"
 	},
 	"i18n-ally.keystyle": "flat",
-	"i18n-ally.localesPaths": [
-		"**/languages/**"
-	],
+	"i18n-ally.localesPaths": ["**/languages/**"],
 	"i18n-ally.sourceLanguage": "pt-br"
 }
