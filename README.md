@@ -1,6 +1,6 @@
 # expo-app-template
 
-Este é um projeto mobile criado utilizando [React.js](https://react.dev/), uma biblioteca para construção de interfaces de usuário, e [Expo@52](https://expo.dev/), um gerenciador de código nativo e bundler que simplifica o desenvolvimento de aplicações mobile para Android e iOS.
+Este é um projeto mobile criado utilizando [React.js](https://react.dev/), uma biblioteca para construção de interfaces de usuário, e [Expo@54](https://expo.dev/), um gerenciador de código nativo e bundler que simplifica o desenvolvimento de aplicações mobile para Android e iOS.
 
 ## Tecnologias Principais
 
@@ -12,8 +12,8 @@ Este é um projeto mobile criado utilizando [React.js](https://react.dev/), uma 
 
 Antes de iniciar o desenvolvimento, certifique-se de ter as seguintes ferramentas instaladas:
 
-* **Node.js** : v20.16.0
-* **Pnpm** : Gerenciador de pacotes v9.12.2
+* **Node.js** : v22.14.0
+* **Pnpm** : Gerenciador de pacotes v10.13.1
 * **Git** : Controle de versão (GitFlow)
 
 Você pode verificar as versões instaladas executando os seguintes comandos no terminal:
