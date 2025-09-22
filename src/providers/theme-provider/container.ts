@@ -1,4 +1,4 @@
-import { useCallback } from 'react'
+import { useCallback, useMemo } from 'react'
 import { useShallow } from 'zustand/react/shallow'
 import { ETheme } from '~/enums/theme'
 import { useAppStore } from '~/stores/app-store'
@@ -23,7 +23,7 @@ export function useThemeProviderContainer() {
 		set({ theme: ETheme.DARK })
 	}, [])
 
-	const currentTheme = THEMES[theme]
+	const currentTheme = useMemo(() => THEMES[theme], [theme])
 
 	return {
 		setLightTheme,

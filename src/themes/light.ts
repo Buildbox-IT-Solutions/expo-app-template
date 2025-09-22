@@ -1,8 +1,8 @@
 import { EFont } from '~/enums/fonts'
 
 export const lightTheme = {
-	COLORS: {
+	colors: {
 		background: '#f5f5f5',
 	},
-	FONTS: EFont,
+	fonts: EFont,
 }

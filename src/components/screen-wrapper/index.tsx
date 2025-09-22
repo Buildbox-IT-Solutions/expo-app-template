@@ -1,6 +1,6 @@
 import { KeyboardAvoidingView, Platform, ScrollView } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { useTheme } from 'styled-components/native'
+import { useThemeContext } from '~/providers/theme-provider'
 import { DEFAULT_SCROLL_VIEW_PROPS } from '~/utils/props'
 import type { IScreenWrapperProps } from './types'
 
@@ -14,7 +14,7 @@ export function ScreenWrapper({
 	keyboardProps,
 	backgroundColor = 'background',
 }: IScreenWrapperProps) {
-	const { COLORS } = useTheme()
+	const { theme } = useThemeContext()
 
 	let content = children
 
@@ -23,7 +23,7 @@ export function ScreenWrapper({
 			<ScrollView
 				style={{
 					flex: 1,
-					backgroundColor: COLORS[backgroundColor],
+					backgroundColor: theme.colors[backgroundColor],
 				}}
 				contentContainerStyle={{ flexGrow: 1 }}
 				{...DEFAULT_SCROLL_VIEW_PROPS}
@@ -40,7 +40,7 @@ export function ScreenWrapper({
 				behavior={Platform.OS === 'ios' ? 'padding' : undefined}
 				style={{
 					flex: 1,
-					backgroundColor: COLORS[backgroundColor],
+					backgroundColor: theme.colors[backgroundColor],
 				}}
 				{...keyboardProps}
 			>
@@ -54,7 +54,7 @@ export function ScreenWrapper({
 			<SafeAreaView
 				style={{
 					flex: 1,
-					backgroundColor: COLORS[backgroundColor],
+					backgroundColor: theme.colors[backgroundColor],
 				}}
 				{...safeAreaProps}
 			>

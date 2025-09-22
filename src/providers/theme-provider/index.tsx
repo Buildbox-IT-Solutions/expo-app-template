@@ -1,10 +1,11 @@
 import { createContext, type ReactNode, useContext } from 'react'
-import { ThemeProvider } from 'styled-components/native'
+import type { ITheme } from '~/interfaces/theme'
 import { useThemeProviderContainer } from './container'
 
 interface IAppThemeProviderContext {
 	setLightTheme: () => void
 	setDarkTheme: () => void
+	theme: ITheme
 }
 
 const AppThemeProviderContext = createContext<IAppThemeProviderContext>(
@@ -20,9 +21,10 @@ export function AppThemeProvider({ children }: { children: ReactNode }) {
 			value={{
 				setLightTheme,
 				setDarkTheme,
+				theme: currentTheme,
 			}}
 		>
-			<ThemeProvider theme={currentTheme}>{children}</ThemeProvider>
+			{children}
 		</AppThemeProviderContext.Provider>
 	)
 }
