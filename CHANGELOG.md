@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/Buildbox-IT-Solutions/expo-app-template/compare/v1.1.0...v1.2.0) (2025-09-23)
+
+
+### Features
+
+* standardize error keys and improve language configuration ([742e273](https://github.com/Buildbox-IT-Solutions/expo-app-template/commit/742e27302cf31080e955c4e9a52280b5fb867469))
+
 # [1.1.0](https://github.com/Buildbox-IT-Solutions/expo-app-template/compare/v1.0.0...v1.1.0) (2025-09-19)
 
 
