@@ -21,7 +21,7 @@ if (!_env.success) {
 	)
 
 	throw new Error(
-		`${t('ERROS.ENVIRONMENT_VARIABLES')} \n${JSON.stringify(errorTable, null, 2)}`,
+		`${t('erros.environment_variables')} \n${JSON.stringify(errorTable, null, 2)}`,
 	)
 }
 

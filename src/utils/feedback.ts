@@ -1,4 +1,5 @@
 import * as haptics from 'expo-haptics'
+import { Alert } from 'react-native'
 
 export class Feedback {
 	static haptic = {
@@ -23,5 +24,10 @@ export class Feedback {
 		warning() {
 			haptics.notificationAsync(haptics.NotificationFeedbackType.Warning)
 		},
+	}
+
+	static notImplemented() {
+		Feedback.haptic.error()
+		Alert.alert('Not implemented', 'This feature is not implemented yet')
 	}
 }

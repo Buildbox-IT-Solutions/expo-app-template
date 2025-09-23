@@ -1,5 +1,5 @@
 {
-	"ERROS": {
-		"ENVIRONMENT_VARIABLES": "Variáveis de ambiente inválidas. Veja a tabela para mais detalhes."
+	"erros": {
+		"environment_variables": "Variáveis de ambiente inválidas. Veja a tabela para mais detalhes."
 	}
 }

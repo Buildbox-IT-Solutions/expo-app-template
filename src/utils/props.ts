@@ -13,4 +13,5 @@ export const DEFAULT_SCROLL_VIEW_PROPS: Partial<ScrollViewProps> = {
 export const DEFAULT_TOUCHABLE_OPACITY_PROPS: Partial<TouchableOpacityProps> = {
 	activeOpacity: 0.8,
 	onPressIn: () => Feedback.haptic.light(),
+	onPress: () => Feedback.notImplemented(),
 }
